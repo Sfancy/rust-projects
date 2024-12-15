@@ -45,12 +45,17 @@ fn main() {
 //     }
 //     largest
 // }
+<<<<<<< Updated upstream
 //
+=======
+
+>>>>>>> Stashed changes
 // fn main() {
 //     let number_list = vec![34, 50, 25, 100, 65];
 //     let result = largest(&number_list);
 //     println!("The largest number is {result}");
 // }
+<<<<<<< Updated upstream
 //
 // struct Point<X1, Y1> {
 //     x: X1,
@@ -99,9 +104,53 @@ where
         x
     } else {
         y
+=======
+
+// // x, y are same type
+// struct Point1<T> {
+//     x: T,
+//     y: T,
+// }
+
+// // different type
+// struct Point2<T, U> {
+//     x: T,
+//     y: U,
+// }
+
+// enum Option<T> {
+//     Some(T),
+//     None,
+// }
+
+// enum Result<T, E> {
+//     Ok(T),
+//     Err(E),
+// }
+
+// fn main() {
+//     let integer = Point1 { x: 5, y: 10 };
+//     let float = Point2 { x: 1.0, y: 4.0 };
+// }
+
+struct Point<T> {
+    x: T,
+    y: T,
+}
+
+impl<T> Point<T> {
+    fn x(&self) -> &T {
+        &self.x
+>>>>>>> Stashed changes
     }
 }
 
 fn main() {
+<<<<<<< Updated upstream
     longest_with_an_announcement("x", "y", "");
+=======
+    let p = Point { x: 5, y: 10 };
+
+    println!("p.x = {}", p.x());
+>>>>>>> Stashed changes
 }
